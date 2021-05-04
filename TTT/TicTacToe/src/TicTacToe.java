@@ -121,11 +121,11 @@ public class TicTacToe {
         winning.add(cross1);
         winning.add(cross2);
 
-        for (List l : winning) {
+        for (List<List> l : winning) {
             if (playerPositions.containsAll(l)) {
                 return "恭喜你您了!";
             } else if (cpuPositions.containsAll(l)) {
-                return "电脑赢了!哈哈 :(";
+                return "电脑赢了!哈哈 :(不开森";
             } else if (playerPositions.size() + cpuPositions.size() == 9) {
                 return "平局!";
             }
