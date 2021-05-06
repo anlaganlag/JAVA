@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.cloud.system.modular.ent.mapper.EntJobMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.cloud.system.modular.ent.entity.EntJob">
+        <id column="company_id" property="companyId"/>
+        <result column="name" property="name"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        sysDwDailyID AS "companyId", dwdailyTaskName AS "name",dwPlatName,dwShopNameSimple,dwCountryCode,dwDlPersonName,dwDlType,dwFileUploadStatus,dwFileUploadResult
+,dwFileHandleResult,dwHasData
+    </sql>
+
+    <sql id="Page_Column_List">
+        sysDwDailyID AS "companyId", dwdailyTaskName AS "name",dwPlatName,dwShopNameSimple,dwCountryCode,dwDlPersonName,
+        case dwDlType when '每周' then concat(dwDlType,' ',dwDlExeactDate-1,' ',dwDlComplateTime) else concat(dwDlType,' ',dwDlExeactDate,' ',dwDlComplateTime) end  dwDlType,dwFileUploadStatus,dwFileUploadResult
+        ,dwFileHandleResult,dwHasData
+    </sql>
+
+    <select id="customPageList" resultType="cn.stylefeng.guns.cloud.system.modular.ent.model.result.EntJobResult"
+            parameterType="cn.stylefeng.guns.cloud.system.modular.ent.model.params.EntJobParam">
+        select
+        <include refid="Page_Column_List"/>
+        from TBDWDailyTask where dwDataObjEnName = 'Flat_File_V2_Settlement_Report'
+
+        <if test="paramCondition.name != null and paramCondition.name != ''">
+            and dwdailyTaskName like concat('%',#{paramCondition.name},'%')
+        </if>
+    </select>
+
+</mapper>

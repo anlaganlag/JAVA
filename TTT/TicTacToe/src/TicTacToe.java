@@ -1,3 +1,5 @@
+package TTT.TicTacToe.src;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -102,26 +104,26 @@ public class TicTacToe {
     }
 
     public static String checkWinner() {
-        List topRow = Arrays.asList(1, 2, 3);
-        List midRow = Arrays.asList(4, 5, 6);
-        List botRow = Arrays.asList(7, 8, 9);
-        List leftCol = Arrays.asList(1, 4, 7);
-        List midCol = Arrays.asList(2, 5, 8);
-        List rightCol = Arrays.asList(3, 6, 9);
-        List cross1 = Arrays.asList(1, 5, 9);
-        List cross2 = Arrays.asList(3, 5, 7);
+        List<Integer> topRow = Arrays.asList(1, 2, 3);
+        List<Integer> midRow = Arrays.asList(4, 5, 6);
+        List<Integer> botRow = Arrays.asList(7, 8, 9);
+        List<Integer> leftCol = Arrays.asList(1, 4, 7);
+        List<Integer> midCol = Arrays.asList(2, 5, 8);
+        List<Integer> rightCol = Arrays.asList(3, 6, 9);
+        List<Integer> cross1 = Arrays.asList(1, 5, 9);
+        List<Integer> cross2 = Arrays.asList(3, 5, 7);
 
-        List<List> winning = new ArrayList<List>();
-        winning.add(topRow);
-        winning.add(midRow);
-        winning.add(botRow);
-        winning.add(leftCol);
-        winning.add(midCol);
-        winning.add(rightCol);
-        winning.add(cross1);
-        winning.add(cross2);
+        List<List> winningCombinations = new ArrayList<List>();
+        winningCombinations.add(topRow);
+        winningCombinations.add(midRow);
+        winningCombinations.add(botRow);
+        winningCombinations.add(leftCol);
+        winningCombinations.add(midCol);
+        winningCombinations.add(rightCol);
+        winningCombinations.add(cross1);
+        winningCombinations.add(cross2);
 
-        for (List<List> l : winning) {
+        for (List<List> l : winningCombinations) {
             if (playerPositions.containsAll(l)) {
                 return "恭喜你您了!";
             } else if (cpuPositions.containsAll(l)) {

@@ -1,0 +1,41 @@
+:root{
+  --mainThemeColor: #4E9EC5;
+  --secondThemeColor: #6BC3E1;
+}
+
+// sidebar
+$menuText:#bfcbd9;
+$menuActiveText:#409EFF;
+$subMenuActiveText:#f4f4f5; //https://github.com/ElemeFE/element/issues/12951
+
+$menuBg:#304156;
+$menuHover:var(--mainThemeColor);
+
+$subMenuBg:#1f2d3d;
+$subMenuHover:#001528;
+
+$sideBarWidth: 210px;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+}
+//#top{
+//  width:100%;
+//  border-bottom:2px solid #000;
+//  background-color:#fff;
+//  font-size:14px;
+//  position:fixed;
+//  top:0;
+//  _position:relative;
+//  z-index:100;
+//  _top:expression(offsetParent.scrollTop+0);
+//}

@@ -1,0 +1,100 @@
+:root{
+  --mainThemeColor: #4E9EC5;
+  --secondThemeColor: #6BC3E1;
+}
+
+//左侧边栏背景
+.theme-default .sj-container .sj-aside {
+  background-color: white !important;
+}
+
+//左侧边栏菜单hover背景
+.el-submenu__title:hover, .el-menu-item:hover {
+  background-color: var(--mainThemeColor) !important;
+  span {
+    color: white !important;
+  }
+  i {
+    color: white !important;
+  }
+}
+
+//左侧菜单选中背景
+.el-menu-item.is-active {
+  background-color: var(--mainThemeColor) !important;
+  span {
+    color: white !important;
+  }
+  i {
+    color: white !important;
+  }
+}
+
+//左侧边栏菜单字体颜色
+.el-submenu__title span, .el-menu-item span, .el-submenu__title i, .el-menu-item i {
+  color: var(--mainThemeColor) !important;
+}
+
+//顶级菜单栏背景
+.sj-toolbar {
+  background-color: var(--mainThemeColor) !important;
+}
+
+//顶部信息tag
+.topTag {
+  //background-color: var(--mainThemeColor) !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+//logo背景
+.sj-logo {
+  background-color: var(--secondThemeColor) !important;
+}
+
+//选中的面包屑背景
+.tag-item.is-active {
+  background-color: var(--mainThemeColor) !important;
+  color: white !important;
+}
+
+//导航栏线背景
+.tags-box {
+  border-bottom: 1px solid var(--mainThemeColor) !important;
+}
+
+//导航操作按钮背景
+.nav-tags {
+  background-color: var(--mainThemeColor) !important;
+  border-color: var(--mainThemeColor) !important;
+}
+
+//表格表头背景
+.el-table th {
+  color: #fff;
+  background-color: var(--mainThemeColor);
+}
+
+//弹窗标题栏背景
+.el-dialog__header {
+  background-color: var(--mainThemeColor);
+}
+
+//普通按钮样式
+.el-button--primary{
+  background-color: var(--mainThemeColor);
+  border-color: var(--mainThemeColor);
+}
+.el-button--primary:focus, .el-button--primary:hover {
+  background: var(--mainThemeColor);
+  border-color: var(--mainThemeColor);
+  color: #FFF;
+}
+
+//input框动画样式
+.el-input:focus-within:after{
+  width:100%;
+  left:0;
+  border-radius: 5px;
+  border-bottom-width: 2px;
+  border-bottom-color: var(--mainThemeColor) !important;
+}

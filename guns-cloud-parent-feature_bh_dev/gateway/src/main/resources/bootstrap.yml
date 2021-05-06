@@ -1,0 +1,10 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: guns-cloud-gateway
+  profiles:
+    active: local
+  main:
+    allow-bean-definition-overriding: true
+

@@ -1,0 +1,121 @@
+.sj-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sj-content {
+  width: 100%;
+  height: auto;
+}
+
+.sj-main {
+  overflow-x: hidden;
+  position: relative;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+}
+.sj-view {
+  width: 100%;
+  height: 100%;
+  /*position: absolute;*/
+  top: 0;
+  left: 0;
+}
+
+.sj-view-container{
+  padding: 10px;
+  height: 100%;
+  background: #ebeff2;
+  .sj-searchbar{
+    height: auto !important;
+    background: #fff;
+    border-radius: 4px;
+    //box-shadow: -1px 0px 2px 1px #ececec;
+    .el-form-item{
+      margin: 10px 0px 10px 10px;
+    }
+    .sj-search-button{
+      margin: 10px 0px;
+      text-align: left;
+    }
+
+    .el-input--small{
+      /deep/ .el-input__inner{
+        border-radius: 2px;
+      }
+    }
+
+    .sj-tools-button{
+      float: right;
+      margin: 10px 10px;
+      text-align: right;
+    }
+
+  }
+
+  .sj-toolbar{
+
+  }
+
+  .sj-view-content{
+    background-color: #fff;
+    margin-top: 10px;
+    border-radius: 4px;
+    padding: 10px 10px 0px 10px;
+    //box-shadow: -1px 0px 2px 1px #ececec;
+    /*margin-bottom: 40px;*/
+    .sj-table{
+      width: 100%;
+      white-space: nowrap;
+      margin-bottom: 0px;
+    }
+
+    .sj-pagination{
+      text-align: left;
+      margin-top: 2px;
+      padding: 10px 5px 5px 0px !important;
+    }
+
+  }
+
+  .sj-view-fotter{
+    width: 100%;
+    height: 40px !important;
+    line-height: 40px;
+    position: absolute;
+    bottom: 0px;
+    left: 2px;
+    padding: 0px;
+    background: #dbdbee;
+
+  }
+}
+.home *{vertical-align:middle;}
+
+/* 模块标题样式 */
+.text_box {
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 600;
+
+  span {
+    color: #7f7f7f
+  }
+
+  .el-button {
+    span {
+      color: #ffffff !important;
+    }
+  }
+}
+.text_box_line {
+  width: 100%;
+  height: 2px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: #7f7f7f
+}

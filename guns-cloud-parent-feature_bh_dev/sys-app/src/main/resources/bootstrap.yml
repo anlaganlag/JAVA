@@ -1,0 +1,10 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: guns-cloud-system
+  profiles:
+    active:  local
+
+

@@ -1,0 +1,155 @@
+.theme-default {
+
+    .sj-container{
+        .sj-aside{
+            box-shadow: 0 1px 4px 0px rgb(51, 51, 51);
+            .sj-logo{
+                color: #ffffff;
+                background-color: #008df7;
+                //background: -webkit-linear-gradient(#464699, #2373c8); /* Safari 5.1 - 6.0 */
+                //background: -o-linear-gradient(#464699, #2373c8); /* Opera 11.1 - 12.0 */
+                //background: -moz-linear-gradient(#464699, #2373c8); /* Firefox 3.6 - 15 */
+                //background: linear-gradient(#464699, #2373c8); /* 标准的语法 */
+            }
+            /*border-top: 4px solid rgba(226,226,226,0.7);*/
+            .el-menu {
+                background-color: transparent !important;
+                .menu-wrapper {
+                    >.el-menu-item {
+                        font-size: 16px;
+                        color: #505254 !important;
+                        height: 45px;
+                        line-height: 45px;
+                        //border: 1px solid transparent;
+                        //border-bottom: 1px solid #ccc;
+                        &:hover {
+                            border: 1px solid #ededf6;
+                            border-left: 4px solid #2373c8;
+                            background-color: #ededf6;
+                            color: #2373c8 !important;
+                        }
+                        &.is-active {
+                            //border: 1px solid #ffffff;
+                            //border-left: 4px solid #2373c8;
+                            background-color: #ffffff;
+                            color: #2373c8 !important;
+                        }
+                        span {
+                            font-size: 24px;
+                        }
+                    }
+                    >.el-submenu {
+                        >.el-submenu__title {
+                            font-size: 16px;
+                            color: #505254 !important;
+                            height: 45px;
+                            line-height: 45px;
+                            //border: 1px solid transparent;
+                            //border-bottom: 1px solid #ccc;
+                            /*padding-left: 15px!important;*/
+                            &:hover {
+                                //border: 1px solid #ededf6;
+                                //border-left: 4px solid #2373c8;
+                                //background-color: #ededf6;
+                                //color: #2373c8 !important;
+                                background-color: #2b68bc;
+                                color: #fff !important;
+                            }
+                        }
+                        >.el-menu {
+                            >.el-menu-item {
+                                font-size: 16px;
+                                color: #505254 !important;
+                                height: 45px;
+                                line-height: 45px;
+                                //border: 1px solid transparent;
+                                //border-bottom: 1px solid #ccc;
+                                &:hover {
+                                    //border: 1px solid #ededf6;
+                                    //border-left: 4px solid #2373c8;
+                                    //background-color: #ededf6;
+                                    //color: #2373c8 !important;
+                                    background-color: #2b68bc;
+                                    color: #fff !important;
+                                }
+                                &.is-active {
+                                    //border: 1px solid #ffffff;
+                                    //border-left: 4px solid #2373c8;
+                                    //background-color: #ffffff;
+                                    //color: #2373c8 !important;
+                                    background-color: #2b68bc;
+                                    color: #fff !important;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .sj-content{
+            .sj-header{
+                .sj-toolbar{
+                    background-color: #0270c1;
+                    //background: -webkit-linear-gradient(#464699, #2373c8); /* Safari 5.1 - 6.0 */
+                    //background: -o-linear-gradient(#464699, #2373c8); /* Opera 11.1 - 12.0 */
+                    //background: -moz-linear-gradient(#464699, #2373c8); /* Firefox 3.6 - 15 */
+                    //background: linear-gradient(#464699, #2373c8); /* 标准的语法 */
+                    color: #ffffff;
+                    //box-shadow: 2px 0px 5px 0px #333;
+                }
+                .sj-tags{
+                    .tag-item{
+                        border: 1px solid #eee;
+                        color: #495060!important;
+                        &.is-active {
+                            .tag-item-icon {
+                                color: #ccc;
+                            }
+                            background: #2b68bc;
+                            color: #fff !important;
+                        }
+                    }
+                }
+            }
+
+            .sj-main{
+                background: -webkit-linear-gradient(#f6f2f780, #f6f2f780); /* Safari 5.1 - 6.0 */
+                background: -o-linear-gradient(#f6f2f780, #f6f2f780); /* Opera 11.1 - 12.0 */
+                background: -moz-linear-gradient(#f6f2f780, #f6f2f780); /* Firefox 3.6 - 15 */
+                background: linear-gradient(#f6f2f780, #f6f2f780); /* 标准的语法 */
+            }
+        }
+
+        .sj-footer{
+            background-color: rgba(207, 207, 207, 0.5);
+            color: #696969;
+        }
+
+    }
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+    width: 8px !important;  /*滚动条宽度*/
+    height: 8px;  /*滚动条高度*/
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+    width: 8px !important;
+    border-radius: 10px;  /*滚动条的背景区域的圆角*/
+    background-color: #fff;/*滚动条的背景颜色*/
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    border-radius: 4px;  /*滚动条的圆角*/
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: rgba(150, 150, 158, 0.5);  /*滚动条的背景颜色*/
+}
+

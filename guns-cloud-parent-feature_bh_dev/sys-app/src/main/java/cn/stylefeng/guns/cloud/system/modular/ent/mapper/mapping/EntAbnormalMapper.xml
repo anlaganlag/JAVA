@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.cloud.system.modular.ent.mapper.EntAbnormalMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.cloud.system.modular.ent.entity.EntAbnormal">
+        <id column="id" property="Id"/>
+        <result column="platname" property="platname"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID
+        ,platname + '_' + shopname + '_' + site shopcode
+        ,platname
+      ,shopname
+      ,site
+      ,start_date
+      ,end_date
+      ,deposit_date
+      ,currency
+      ,remark
+      ,CASE status when 0 then '无数据'
+                   when 1 then 'data range数据'
+                   when 2 then 'settlement数据'
+                   ELSE '' END status
+      ,CASE handle_status when 1 then '解析完成'
+                          when 2 then '解析失败'
+                          ELSE '' END handle_status
+      ,fileuploadpath
+      ,create_time
+      ,update_time
+    </sql>
+
+    <sql id="Page_Column_List">
+        ID
+      ,platname + '_' + shopname + '_' + site shopcode
+      ,platname
+      ,shopname
+      ,site
+      ,start_date
+      ,end_date
+      ,deposit_date
+      ,currency
+      ,remark
+      ,CASE status when 0 then '无数据'
+                   when 1 then 'data range数据'
+                   when 2 then 'settlement数据'
+                   ELSE '' END status
+      ,CASE handle_status when 0 then '解析完成'
+                          when 1 then '解析失败'
+                          ELSE '' END handle_status
+      ,fileuploadpath
+      ,create_time
+      ,update_time
+    </sql>
+
+    <select id="customPageList" resultType="cn.stylefeng.guns.cloud.system.modular.ent.model.result.EntAbnormalResult"
+            parameterType="cn.stylefeng.guns.cloud.system.modular.ent.model.params.EntAbnormalParam">
+        select
+        <include refid="Page_Column_List"/>
+        from TbSettlementAbnormal where 1=1
+
+        <if test="paramCondition.platname != null and paramCondition.platname != ''">
+            and platname like concat('%',#{paramCondition.platname},'%')
+        </if>
+        <if test="paramCondition.shopname != null and paramCondition.shopname != ''">
+            and shopname like concat('%',#{paramCondition.shopname},'%')
+        </if>
+        <if test="paramCondition.site != null and paramCondition.site != ''">
+            and site like concat('%',#{paramCondition.site},'%')
+        </if>
+    </select>
+
+</mapper>

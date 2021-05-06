@@ -1,0 +1,400 @@
+@import "./changeTheme.scss"; //配置页
+
+@mixin background_color_sidebar() {
+  [data-theme="theme1"] & {
+    background-color: $background_color_sidebar_theme1 !important;
+  }
+  [data-theme="theme2"] & {
+    background-color: $background_color_sidebar_theme2 !important;
+  }
+  [data-theme="theme3"] & {
+    background-color: $background_color_sidebar_theme3 !important;
+  }
+  [data-theme="theme4"] & {
+    background-color: $background_color_sidebar_theme4 !important;
+  }
+  [data-theme="theme5"] & {
+    background-color: $background_color_sidebar_theme5 !important;
+  }
+  [data-theme="theme6"] & {
+    background-color: $background_color_sidebar_theme6 !important;
+  }
+  [data-theme="theme7"] & {
+    background-color: $background_color_sidebar_theme7 !important;
+  }
+}
+
+@mixin background_color_sidebar_logo() {
+  [data-theme="theme1"] & {
+    background-color: $background_color_sidebar_logo_theme1 !important;
+  }
+  [data-theme="theme2"] & {
+    background-color: $background_color_sidebar_logo_theme2 !important;
+  }
+  [data-theme="theme3"] & {
+    background-color: $background_color_sidebar_logo_theme3 !important;
+  }
+  [data-theme="theme4"] & {
+    background-color: $background_color_sidebar_logo_theme4 !important;
+  }
+  [data-theme="theme5"] & {
+    background-color: $background_color_sidebar_logo_theme5 !important;
+  }
+  [data-theme="theme6"] & {
+    background-color: $background_color_sidebar_logo_theme6 !important;
+  }
+  [data-theme="theme7"] & {
+    background-color: $background_color_sidebar_logo_theme7 !important;
+  }
+}
+
+@mixin background_color_sidebar_last() {
+  [data-theme="theme1"] & {
+    background-color: $background_color_sidebar_last_theme1 !important;
+  }
+  [data-theme="theme2"] & {
+    background-color: $background_color_sidebar_last_theme2 !important;
+  }
+  [data-theme="theme3"] & {
+    background-color: $background_color_sidebar_last_theme3 !important;
+  }
+  [data-theme="theme4"] & {
+    background-color: $background_color_sidebar_last_theme4 !important;
+  }
+  [data-theme="theme5"] & {
+    background-color: $background_color_sidebar_last_theme5 !important;
+  }
+  [data-theme="theme6"] & {
+    background-color: $background_color_sidebar_last_theme6 !important;
+  }
+  [data-theme="theme7"] & {
+    background-color: $background_color_sidebar_last_theme7 !important;
+  }
+}
+
+@mixin background_color_sidebar_hover() {
+  [data-theme="theme1"] & {
+    background-color: $background_color_sidebar_hover_theme1 !important;
+
+    span {
+      color: white !important;
+    }
+
+    i {
+      color: white !important;
+    }
+  }
+  [data-theme="theme2"] & {
+    background-color: $background_color_sidebar_hover_theme2 !important;
+
+    span {
+      color: white !important;
+    }
+
+    i {
+      color: white !important;
+    }
+  }
+  [data-theme="theme3"] & {
+    background-color: $background_color_sidebar_hover_theme3 !important;
+
+    span {
+      color: white !important;
+    }
+
+    i {
+      color: white !important;
+    }
+  }
+  [data-theme="theme4"] & {
+    background-color: $background_color_sidebar_hover_theme4 !important;
+
+    span {
+      color: white !important;
+    }
+
+    i {
+      color: white !important;
+    }
+  }
+  [data-theme="theme5"] & {
+    background-color: $background_color_sidebar_hover_theme5 !important;
+
+    span {
+      color: white !important;
+    }
+
+    i {
+      color: white !important;
+    }
+  }
+  [data-theme="theme6"] & {
+    background-color: $background_color_sidebar_hover_theme6 !important;
+
+    span {
+      color: white !important;
+    }
+
+    i {
+      color: white !important;
+    }
+  }
+  [data-theme="theme7"] & {
+    background-color: $background_color_sidebar_hover_theme7 !important;
+
+    span {
+      color: white !important;
+    }
+
+    i {
+      color: white !important;
+    }
+  }
+}
+
+@mixin background_color_sidebar_span_i() {
+  [data-theme="theme1"] & {
+    color: $background_color_sidebar_span_i_theme1 !important;
+  }
+  [data-theme="theme2"] & {
+    color: $background_color_sidebar_span_i_theme2 !important;
+  }
+  [data-theme="theme3"] & {
+    color: $background_color_sidebar_span_i_theme3 !important;
+  }
+  [data-theme="theme4"] & {
+    color: $background_color_sidebar_span_i_theme4 !important;
+  }
+  [data-theme="theme5"] & {
+    color: $background_color_sidebar_span_i_theme5 !important;
+  }
+  [data-theme="theme6"] & {
+    color: $background_color_sidebar_span_i_theme6 !important;
+  }
+  [data-theme="theme7"] & {
+    color: $background_color_sidebar_span_i_theme7 !important;
+  }
+}
+
+@mixin top() {
+  [data-theme="theme1"] & {
+    background-color: $top_theme1 !important;
+  }
+  [data-theme="theme2"] & {
+    background-color: $top_theme2 !important;
+  }
+  [data-theme="theme3"] & {
+    background-color: $top_theme3 !important;
+  }
+  [data-theme="theme4"] & {
+    background-color: $top_theme4 !important;
+  }
+  [data-theme="theme5"] & {
+    background-color: $top_theme5 !important;
+  }
+  [data-theme="theme6"] & {
+    background-color: $top_theme6 !important;
+  }
+  [data-theme="theme7"] & {
+    background-color: $top_theme7 !important;
+  }
+}
+
+@mixin iconColor() {
+  [data-theme="theme1"] & {
+    color: $iconColor_theme1 !important;
+  }
+  [data-theme="theme2"] & {
+    color: $iconColor_theme2 !important;
+  }
+  [data-theme="theme3"] & {
+    color: $iconColor_theme3 !important;
+  }
+  [data-theme="theme4"] & {
+    color: $iconColor_theme4 !important;
+  }
+  [data-theme="theme5"] & {
+    color: $iconColor_theme5 !important;
+  }
+  [data-theme="theme6"] & {
+    color: $iconColor_theme6 !important;
+  }
+  [data-theme="theme7"] & {
+    color: $iconColor_theme7 !important;
+  }
+}
+
+@mixin topTag() {
+  [data-theme="theme1"] & {
+    background-color: $topTag_theme1 !important;
+  }
+  [data-theme="theme2"] & {
+    background-color: $topTag_theme2 !important;
+  }
+  [data-theme="theme3"] & {
+    background-color: $topTag_theme3 !important;
+  }
+  [data-theme="theme4"] & {
+    background-color: $topTag_theme4 !important;
+  }
+  [data-theme="theme5"] & {
+    background-color: $topTag_theme5 !important;
+  }
+  [data-theme="theme6"] & {
+    background-color: $topTag_theme6 !important;
+  }
+  [data-theme="theme7"] & {
+    background-color: $topTag_theme7 !important;
+  }
+}
+
+@mixin elTableHead() {
+  [data-theme="theme1"] & {
+    background-color: $elTableHead_theme1;
+  }
+  [data-theme="theme2"] & {
+    background-color: $elTableHead_theme2;
+  }
+  [data-theme="theme3"] & {
+    background-color: $elTableHead_theme3;
+  }
+  [data-theme="theme4"] & {
+    background-color: $elTableHead_theme4;
+  }
+  [data-theme="theme5"] & {
+    background-color: $elTableHead_theme5;
+  }
+  [data-theme="theme6"] & {
+    background-color: $elTableHead_theme6;
+  }
+  [data-theme="theme7"] & {
+    background-color: $elTableHead_theme7;
+  }
+}
+
+@mixin elDialogHeader() {
+  [data-theme="theme1"] & {
+    background-color: $elDialogHeader_theme1 !important;
+  }
+  [data-theme="theme2"] & {
+    background-color: $elDialogHeader_theme2 !important;
+  }
+  [data-theme="theme3"] & {
+    background-color: $elDialogHeader_theme3 !important;
+  }
+  [data-theme="theme4"] & {
+    background-color: $elDialogHeader_theme4 !important;
+  }
+  [data-theme="theme5"] & {
+    background-color: $elDialogHeader_theme5 !important;
+  }
+  [data-theme="theme6"] & {
+    background-color: $elDialogHeader_theme6 !important;
+  }
+  [data-theme="theme7"] & {
+    background-color: $elDialogHeader_theme7 !important;
+  }
+}
+
+@mixin tagItemActive() {
+  [data-theme="theme1"] & {
+    background-color: $tagItemActive_theme1 !important;
+  }
+  [data-theme="theme2"] & {
+    background-color: $tagItemActive_theme2 !important;
+  }
+  [data-theme="theme3"] & {
+    background-color: $tagItemActive_theme3 !important;
+  }
+  [data-theme="theme4"] & {
+    background-color: $tagItemActive_theme4 !important;
+  }
+  [data-theme="theme5"] & {
+    background-color: $tagItemActive_theme5 !important;
+  }
+  [data-theme="theme6"] & {
+    background-color: $tagItemActive_theme6 !important;
+  }
+  [data-theme="theme7"] & {
+    background-color: $tagItemActive_theme7 !important;
+  }
+}
+
+@mixin tagsMenuButton() {
+  [data-theme="theme1"] & {
+    background-color: $tagsMenuButton_theme1 !important;
+    border-color: $tagsMenuButton_theme1 !important;
+  }
+  [data-theme="theme2"] & {
+    background-color: $tagsMenuButton_theme2 !important;
+    border-color: $tagsMenuButton_theme2 !important;
+  }
+  [data-theme="theme3"] & {
+    background-color: $tagsMenuButton_theme3 !important;
+    border-color: $tagsMenuButton_theme3 !important;
+  }
+  [data-theme="theme4"] & {
+    background-color: $tagsMenuButton_theme4 !important;
+    border-color: $tagsMenuButton_theme4 !important;
+  }
+  [data-theme="theme5"] & {
+    background-color: $tagsMenuButton_theme5 !important;
+    border-color: $tagsMenuButton_theme5 !important;
+  }
+  [data-theme="theme6"] & {
+    background-color: $tagsMenuButton_theme6 !important;
+    border-color: $tagsMenuButton_theme6 !important;
+  }
+  [data-theme="theme7"] & {
+    background-color: $tagsMenuButton_theme7 !important;
+    border-color: $tagsMenuButton_theme7 !important;
+  }
+}
+
+@mixin myCardTreeTitle() {
+  [data-theme="theme1"] & {
+    background: $myCardTreeTitle_theme1 !important;
+  }
+  [data-theme="theme2"] & {
+    background: $myCardTreeTitle_theme2 !important;
+  }
+  [data-theme="theme3"] & {
+    background: $myCardTreeTitle_theme3 !important;
+  }
+  [data-theme="theme4"] & {
+    background: $myCardTreeTitle_theme4 !important;
+  }
+  [data-theme="theme5"] & {
+    background: $myCardTreeTitle_theme5 !important;
+  }
+  [data-theme="theme6"] & {
+    background: $myCardTreeTitle_theme6 !important;
+  }
+  [data-theme="theme7"] & {
+    background: $myCardTreeTitle_theme7 !important;
+  }
+}
+
+@mixin tagsBoxLine() {
+  [data-theme="theme1"] & {
+    border-bottom: 1px solid $tagsBoxLine_theme1 !important;
+  }
+  [data-theme="theme2"] & {
+    border-bottom: 1px solid $tagsBoxLine_theme2 !important;
+  }
+  [data-theme="theme3"] & {
+    border-bottom: 1px solid $tagsBoxLine_theme3 !important;
+  }
+  [data-theme="theme4"] & {
+    border-bottom: 1px solid $tagsBoxLine_theme4 !important;
+  }
+  [data-theme="theme5"] & {
+    border-bottom: 1px solid $tagsBoxLine_theme5 !important;
+  }
+  [data-theme="theme6"] & {
+    border-bottom: 1px solid $tagsBoxLine_theme6 !important;
+  }
+  [data-theme="theme7"] & {
+    border-bottom: 1px solid $tagsBoxLine_theme7 !important;
+  }
+}

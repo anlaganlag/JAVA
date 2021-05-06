@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: 47.119.141.2:8848
+        namespace: fe80e8ae-83f7-41e0-ae15-dd49d0caa570
+#        file-extension: yml
+#        shared-configs:
+#          - data-id: bsc.yml
+#            refresh: true
+
+
+

@@ -1,0 +1,62 @@
+@font-face {font-family: "iconfont";
+  src: url('./iconfont.ttf'); /* IE9 */
+  src: url('./iconfont.ttf') format('embedded-opentype'), /* IE6-IE8 */
+  url('./iconfont.ttf') format('woff2'),
+  url('./iconfont.ttf') format('woff'),
+  url('./iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('./iconfont.ttf') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {font-family: "iconfont";
+  src: url('./iconfont2.ttf'); /* IE9 */
+  src: url('./iconfont2.ttf') format('embedded-opentype'), /* IE6-IE8 */
+  url('./iconfont2.ttf') format('woff2'),
+  url('./iconfont2.ttf') format('woff'),
+  url('./iconfont2.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('./iconfont2.ttf') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logout:before {
+  content: "\e637";
+}
+
+.icon-luyou:before {
+  content: "\e6a6";
+}
+
+.icon-anquan:before {
+  content: "\e681";
+}
+
+.icon-denglurizhi:before {
+  content: "\e694";
+}
+
+.icon-kehuduan:before {
+  content: "\e607";
+}
+
+.icon-ziyuan:before {
+  content: "\e7b0";
+}
+
+.icon-zuidahuihua:before {
+  content: "\e664";
+}
+
+.icon-mima:before {
+  content: "\e64b";
+}
+
+.icon-login-:before {
+  content: "\e69c";
+}
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>cn.stylefeng.guns</groupId>
+        <artifactId>message-center</artifactId>
+        <version>1.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>guns-cloud-example-account</artifactId>
+    <packaging>jar</packaging>
+
+    <name>guns-cloud-example-account</name>
+    <description>消息服务的演示-账户系统</description>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>cn.stylefeng.guns</groupId>
+            <artifactId>sys-api</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.stylefeng.guns</groupId>
+            <artifactId>guns-cloud-example-aapi</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.stylefeng.guns</groupId>
+            <artifactId>guns-cloud-message-api</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <!--guns-cloud通用核心包-->
+        <dependency>
+            <groupId>cn.stylefeng.guns</groupId>
+            <artifactId>common-core</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <!--mq-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-stream-rocketmq</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <delimiters>
+                        <delimiter>@</delimiter>
+                    </delimiters>
+                    <useDefaultDelimiters>false</useDefaultDelimiters>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>
